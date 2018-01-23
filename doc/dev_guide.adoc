@@ -1,0 +1,39 @@
+[[dev_guide]]
+= Developer Guide
+
+*Command Line Build*
+
+boothubTest is built with http://www.gradle.org[Gradle] and requires JDK 8 or higher.
+Clone the GitHub repository, `cd` into the top directory and start the build:
+
+[source]
+----
+git clone https://github.com/Londoner1234/boothubTest.git
+cd boothubTest
+./gradlew clean build            (On Windows: gradlew clean build)
+----
+
+
+*IntelliJ Idea*
+
+- start the IntelliJ Idea IDE
+
+- open _build.gradle_
+
+
+*Eclipse*
+
+- start the Eclipse IDE
+
+- install a recent version of https://projects.eclipse.org/projects/tools.buildship[Buildship].
+- import the project using the Gradle Project wizard
+
+
+
+*Upload to Bintray*
+
+The Bintray credentials must be available in a file called _gradle-local.properties_.
+You can use link:{blob-root-master}/gradle-local.template.properties[gradle-local.template.properties] as template and adjust it accordingly.
+
+
+*TBD*
